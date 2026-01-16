@@ -14,6 +14,7 @@
         
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
         
         * {
             margin: 0;
@@ -32,14 +33,22 @@
         body {
             background: var(--bg-primary);
             color: var(--text-primary);
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins', 'Noto Sans', sans-serif;
             overflow-x: hidden;
         }
         
         /* Arabic font support */
         [lang="ar"] body,
         [lang="ar"] * {
-            font-family: 'Noto Sans Arabic', 'Poppins', sans-serif;
+            font-family: 'Noto Sans Arabic', 'Noto Sans', sans-serif;
+        }
+        
+        /* Turkish and Russian font support */
+        html[lang="tr"] body,
+        html[lang="tr"] body *,
+        html[lang="ru"] body,
+        html[lang="ru"] body * {
+            font-family: 'Noto Sans', 'Poppins', sans-serif !important;
         }
         
         .title-font {
@@ -229,6 +238,7 @@
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            font-family: 'Noto Sans', 'Poppins', sans-serif;
         }
         
         .lang-option:hover {
@@ -454,7 +464,106 @@
        <h1 class="title-font text-4xl sm:text-5xl font-bold" data-i18n="privacy.mooddrake.title">MoodDrake Privacy Policy</h1>
       </div>
       <div class="bg-gray-900 rounded-3xl p-6 sm:p-10 border border-gray-800">
-       <div class="privacy-content text-gray-300" data-i18n-html="privacy.mooddrake.content">
+       <div class="privacy-content text-gray-300">
+        <p class="text-lg mb-4"><strong>Effective Date:</strong> January 1, 2025</p>
+        <h2 class="title-font text-2xl font-bold text-white">1. Data Controller</h2>
+        <p>As the MoodDrake mobile application, we are committed to ensuring the security of your personal data and protecting your privacy in accordance with all applicable data protection laws.</p>
+        <p><strong>Data Controller:</strong> MoodDrake</p>
+        <p><strong>Contact:</strong> Valkyrie Dynamics – valkyriadynamica@gmail.com</p>
+        <h2 class="title-font text-2xl font-bold text-white">2. Collected Personal Data</h2>
+        <p>The following types of data are processed within the scope of the application:</p>
+        <ul>
+         <li><strong>Account information:</strong> email address, password (stored securely with hashing)</li>
+         <li><strong>Device information:</strong> operating system, device model, IP address, language, and country information</li>
+         <li><strong>Usage data:</strong> session duration, number of interactions, in-app navigation statistics</li>
+         <li><strong>Advertising data:</strong> ad display and click history, advertising ID (AAID / IDFA)</li>
+         <li><strong>Analytics data:</strong> anonymized performance and usage statistics</li>
+        </ul>
+        <h2 class="title-font text-2xl font-bold text-white">3. Purposes and Legal Basis for Data Processing</h2>
+        <p>Your personal data is processed for the following purposes:</p>
+        <ul>
+         <li>Creating an account, logging in, and ensuring secure access</li>
+         <li>Monitoring app performance and improving user experience</li>
+         <li>Displaying and personalizing advertisements</li>
+        </ul>
+        <p>MoodDrake is a mobile application that operates on an ad-supported and personalized content model. Displaying advertisements and personalized content is an integral part of the service.</p>
+        <p>By using the application, you consent to the processing of your personal data for advertising and analytics purposes. This processing is necessary to provide the app free of charge.</p>
+        <p>If you do not wish your data to be processed for advertising purposes, you can delete your account or stop using the application.</p>
+        <p><strong>Legal Basis:</strong></p>
+        <ul>
+         <li>GDPR Article 6(1)(b): Performance of a contract (operation of the app and maintenance of the ad-supported structure)</li>
+         <li>GDPR Article 6(1)(a): User's explicit consent (for personalized ads)</li>
+         <li>Turkish KVKK Article 5: Explicit consent and data processing directly related to the establishment or performance of a contract</li>
+        </ul>
+        <h2 class="title-font text-2xl font-bold text-white">4. Data Sharing</h2>
+        <p>MoodDrake does not sell, rent, or share your personal data with third parties for commercial purposes.</p>
+        <p>Your data may only be shared in the following cases:</p>
+        <ul>
+         <li>To comply with legal obligations, upon request from authorized public authorities</li>
+         <li>With infrastructure service providers that support the technical operation of the app (such as hosting or email providers)</li>
+         <li>With third-party advertising and analytics providers (such as Google AdMob, Supabase, Meta Audience Network, etc.) solely for performance tracking and personalized ad delivery</li>
+        </ul>
+        <p>All data transfers are carried out with the necessary security measures under KVKK and GDPR.</p>
+        <h2 class="title-font text-2xl font-bold text-white">5. Data Retention Period</h2>
+        <p>Your data is retained as long as your account remains active.</p>
+        <p>When you delete your account, all your personal data (including backup systems) is permanently deleted or anonymized within 30 days.</p>
+        <h2 class="title-font text-2xl font-bold text-white">6. Security Measures</h2>
+        <p>Necessary technical and administrative measures are taken to ensure the security of your personal data:</p>
+        <ul>
+         <li>Passwords are stored using hash algorithms and cannot be accessed in plain text</li>
+         <li>All data transmissions are encrypted via SSL/TLS protocol</li>
+         <li>Access is restricted only to authorized personnel</li>
+        </ul>
+        <h2 class="title-font text-2xl font-bold text-white">7. User Rights</h2>
+        <p>Users have the following rights under applicable data protection laws:</p>
+        <ul>
+         <li>Access their data</li>
+         <li>Correct inaccurate data</li>
+         <li>Delete their data</li>
+        </ul>
+        <p>All these rights can be exercised via the in-app "Account Settings" menu or by email.</p>
+        <p>Users who wish to stop data processing must delete their accounts.</p>
+        <h2 class="title-font text-2xl font-bold text-white">8. Cookies and Analytics</h2>
+        <p>MoodDrake may use cookies or similar technologies for the purpose of displaying advertisements, measuring performance, and improving user experience.</p>
+        <p>This data does not allow direct identification of your identity; advertising identifiers are processed in an anonymized manner.</p>
+        <h2 class="title-font text-2xl font-bold text-white">9. Disclaimer</h2>
+        <p>The content of the application is provided for informational purposes only and does not constitute medical, psychological, or legal advice.</p>
+        <p>MoodDrake is not responsible for interruptions, data loss, or security errors caused by third-party service providers.</p>
+        <h2 class="title-font text-2xl font-bold text-white">10. Country-Specific Annexes</h2>
+        <h3 class="title-font text-xl font-bold text-white">Annex 1 — Turkey Users (KVKK)</h3>
+        <p>This section applies under Law No. 6698 on the Protection of Personal Data.</p>
+        <p><strong>Data Controller:</strong> MoodDrake</p>
+        <p><strong>Contact:</strong> valkyriadynamica@gmail.com</p>
+        <p>Users have the right to access, correct, delete their data, and withdraw consent. Consent withdrawal is possible by deleting the account.</p>
+        <h3 class="title-font text-xl font-bold text-white">Annex 2 — European Union Users (GDPR)</h3>
+        <p>MoodDrake processes data of users in the European Economic Area in accordance with GDPR.</p>
+        <p><strong>Rights:</strong></p>
+        <ul>
+         <li>Access</li>
+         <li>Correction</li>
+         <li>Deletion</li>
+         <li>Portability</li>
+         <li>Objection to processing</li>
+         <li>Right to lodge a complaint</li>
+        </ul>
+        <p>Data transfer is carried out securely under GDPR Article 46.</p>
+        <p>Continuing to use the app constitutes consent for personalized ads.</p>
+        <h3 class="title-font text-xl font-bold text-white">Annex 3 — United States Users (CCPA/CPRA)</h3>
+        <p>Under U.S. state laws, users have the right to delete their data, opt out of data sale, and be free from discrimination.</p>
+        <p>MoodDrake does not sell user data, but personalized advertising is an essential part of the service.</p>
+        <p>Users who reject data sharing cannot continue to use the app.</p>
+        <h3 class="title-font text-xl font-bold text-white">Annex 4 — Other Countries</h3>
+        <p>MoodDrake complies with all other national privacy laws (Canada: PIPEDA, Brazil: LGPD, Japan: APPI, South Korea: PIPA, Australia: Privacy Act, India: DPDP Act).</p>
+        <p>Users in these countries also have the right to access, correct, and delete their data. Requests can be sent to valkyriadynamica@gmail.com.</p>
+        <h2 class="title-font text-2xl font-bold text-white">11. Enforcement and Amendments</h2>
+        <p>This privacy policy is effective as of 2025. MoodDrake may update the policy due to legal changes or technical requirements. The latest version will always be available in the in-app "Privacy Policy" section.</p>
+        <h2 class="title-font text-2xl font-bold text-white">12. Explicit Consent and Account Deletion</h2>
+        <p>MoodDrake provides personalized advertising as part of the service.</p>
+        <p>By using the application, you agree to these terms and the processing of your personal data.</p>
+        <p>If you wish to withdraw your consent, you can delete your account or stop using the app.</p>
+        <h2 class="title-font text-2xl font-bold text-white">Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+        <p class="text-white font-semibold">valkyriadynamica@gmail.com</p>
        </div>
       </div>
      </div>
@@ -532,7 +641,33 @@
        <h1 class="title-font text-4xl sm:text-5xl font-bold" data-i18n="privacy.tasknest.title">TaskNest Privacy Policy</h1>
       </div>
       <div class="bg-gray-900 rounded-3xl p-6 sm:p-10 border border-gray-800">
-       <div class="privacy-content text-gray-300" data-i18n-html="privacy.tasknest.content">
+       <div class="privacy-content text-gray-300">
+        <p class="text-lg mb-4"><strong>Last Updated:</strong> 2025</p>
+        <p class="text-lg mb-8">TaskNest is designed with privacy as a core principle. We do not collect, store, process, or share any personal data from users.</p>
+        <h2 class="title-font text-2xl font-bold text-white">1. No Data Collection</h2>
+        <p class="mb-4">TaskNest does not collect:</p>
+        <ul>
+         <li>Personal information</li>
+         <li>Usage data</li>
+         <li>Analytics or tracking data</li>
+         <li>Location data</li>
+         <li>Device identifiers</li>
+         <li>Advertising identifiers</li>
+        </ul>
+        <h2 class="title-font text-2xl font-bold text-white">2. Local Device Storage Only</h2>
+        <p class="mb-4">All tasks, notes, and reminders you create inside TaskNest are stored ONLY on your device. Your data:</p>
+        <ul>
+         <li>Is never uploaded to any server</li>
+         <li>Is never transmitted outside your device</li>
+         <li>Can be deleted at any time by uninstalling the app</li>
+        </ul>
+        <h2 class="title-font text-2xl font-bold text-white">3. Third-Party Services</h2>
+        <p>TaskNest does not integrate any third-party analytics, advertising, tracking, or data-processing services.</p>
+        <h2 class="title-font text-2xl font-bold text-white">4. Children's Privacy</h2>
+        <p>Since no personal data is collected, TaskNest is safe for users of all ages.</p>
+        <h2 class="title-font text-2xl font-bold text-white">5. Changes to This Policy</h2>
+        <p>If this privacy policy is updated, the latest version will always be accessible within the app.</p>
+        <p class="text-center text-gray-500 mt-8">© 2025 TaskNest — Valkyrie Dynamics</p>
        </div>
       </div>
      </div>
@@ -626,7 +761,7 @@
                         desc: "MoodDrake es más que un potenciador del estado de ánimo, es un compañero místico para la curación emocional y la claridad espiritual. Descubre afirmaciones poderosas, meditaciones guiadas, ejercicios para mejorar el ánimo y una colección de pequeños rituales diseñados para apoyar tu equilibrio interior."
                     },
                     tasknest: {
-                        desc: "TaskNest es una aplicación de lista de tareas hermosamente simple construida para ayudarte a organizar tu vida de la manera más limpia, rápida y sin esfuerzo posible. Sin menús que aprender, sin funciones complicadas, sin distracciones—solo una pantalla clara donde todo encaja y todo fluye."
+                        desc: "TaskNest es una aplicación de lista de tareas hermosamente simple construida para ayudarte a organizar tu vida de la manera más limpia, rápida y sin esfuerzo posible. Sin menús que aprender, sin funciones complicadas, sin distracciones���solo una pantalla clara donde todo encaja y todo fluye."
                     }
                 },
                 contact: {
@@ -652,7 +787,7 @@
                     needHelp: "¿Necesitas ayuda?",
                     description: "Si tienes algún problema al usar la aplicación, nuestro equipo está aquí para ayudarte. Consulta las preguntas frecuentes a continuación o contáctanos directamente por correo electrónico.",
                     contactUs: "Contáctanos",
-                    contactDescription: "Para preguntas, sugerencias o informes de errores, envíanos un correo a:",
+                    contactDescription: "Para preguntas, sugerencias o informes de errores, env��anos un correo a:",
                     mooddrake: {
                         title: "Soporte de MoodDrake"
                     },
@@ -670,34 +805,34 @@
             },
             ar: {
                 nav: {
-                    home: "الرئيسية",
-                    apps: "التطبيقات",
-                    contact: "اتصل بنا"
+                    home: "ا����ئيسية",
+                    apps: "التطب��قات",
+                    contact: "اتصل ��ن��"
                 },
                 hero: {
                     title: "اجعلها بسيطة!",
-                    subtitle: "شركة تطبيقات الهاتف المحمول التي تعزز حياتك اليومية بالابتكار والبساطة!"
+                    subtitle: "شركة تطبيقات الهاتف المحمول التي ����عزز حياتك اليومية بالابتكار والبساطة!"
                 },
                 apps: {
                     title: "تطبيقاتنا",
-                    appStore: "آب ستور",
+                    appStore: "آب س��ور",
                     playStore: "بلاي ستور",
                     privacyPolicy: "سياسة الخصوصية",
                     support: "الدعم",
                     accountDeletion: "حذف الحساب",
                     mooddrake: {
-                        desc: "MoodDrake هو أكثر من مجرد معزز للمزاج، إنه رفيق صوفي للشفاء العاطفي والوضوح الروحي. اكتشف التأكيدات القوية والتأملات الموجهة والتمارين المعززة للمزاج ومجموعة من الطقوس الصغيرة المصممة لدعم توازنك الداخلي."
+                        desc: "MoodDrake هو أكثر من مجرد معزز للمزاج، إنه رفيق صوفي للشفاء العاطفي والوضوح الروحي. ا��تشف التأكي��ات القوية والتأملات الموجهة والتما��ين المعززة للمزاج ومجموعة من الطقو�� الصغيرة المصممة لدعم توازنك الداخلي."
                     },
                     tasknest: {
-                        desc: "TaskNest هو تطبيق قائمة مهام بسيط بشكل جميل تم بناؤه لمساعدتك في تنظيم حياتك بأنظف وأسرع وأسهل طريقة ممكنة. لا توجد قوائم لتعلمها، ولا ميزات معقدة، ولا مشتتات—مجرد شاشة واضحة واحدة حيث يتناسب كل شيء ويتدفق كل شيء."
+                        desc: "TaskNest هو تطبيق قائمة مهام بسيط بشكل جميل تم بناؤه لمساع��تك في تنظيم ��ياتك بأنظف وأسرع وأسهل ط����ي���� ممكنة. لا توجد قو������م لتعلمها، ولا ميزات معقدة، ولا مشتتات—مجرد شاشة واضحة واحدة حيث يتناسب كل شيء ويتدفق كل شيء."
                     }
                 },
                 contact: {
                     title: "اتصل بنا",
-                    subtitle: "هل لديك أسئلة أو ملاحظات؟ نود أن نسمع منك."
+                    subtitle: "هل لديك أسئلة ��و ملاحظات؟ نود أن نسمع منك."
                 },
                 footer: {
-                    tagline: "تحويل الأفكار إلى واقع، تطبيق واحد في كل مرة.",
+                    tagline: "تحوي�� الأفكار إلى واقع، تطبيق واحد في كل مرة.",
                     copyright: "© 2025 Valkyrie Dynamics. جميع الحقوق محفوظة."
                 },
                 common: {
@@ -705,7 +840,7 @@
                 },
                 privacy: {
                     mooddrake: {
-                        title: "سياسة خصوصية MoodDrake"
+                        title: "سياسة خص��صية MoodDrake"
                     },
                     tasknest: {
                         title: "سياسة خصوصية TaskNest"
@@ -713,7 +848,7 @@
                 },
                 support: {
                     needHelp: "هل تحتاج إلى مساعدة؟",
-                    description: "إذا كنت تواجه أي مشاكل أثناء استخدام التطبيق، فريقنا هنا لمساعدتك. تحقق من الأسئلة الشائعة أدناه أو اتصل بنا مباشرة عبر البريد الإلكتروني.",
+                    description: "إذا كنت تواجه ��ي مشاكل أثناء استخدام التطبيق، فري��نا هنا لمسا��د��ك. تحقق من الأسئلة الشائعة أدناه أو اتصل بنا مباشرة عبر البريد الإلكتروني.",
                     contactUs: "اتصل بنا",
                     contactDescription: "للأسئلة أو الاقتراحات أو تقارير الأخطاء، راسلنا على:",
                     mooddrake: {
@@ -726,9 +861,9 @@
                 },
                 deletion: {
                     title: "كيفية حذف حساب MoodDrake الخاص بك",
-                    intro: "يسمح MoodDrake للمستخدمين بحذف حساباتهم في أي وقت.",
+                    intro: "يسمح MoodDrake للم��تخدمين ب��ذف حساباتهم في أي وقت.",
                     cantAccess: "لا يمكنك الوصول إلى التطبيق؟",
-                    emailInstructions: "إذا لم يعد بإمكانك الوصول إلى التطبيق، يمكنك أيضًا طلب الحذف عن طريق مراسلتنا على:"
+                    emailInstructions: "إذا لم يعد بإمكانك الوصول إلى التطبيق، يمكنك أيضًا طلب الح��ف عن طريق مراسلتنا على:"
                 }
             },
             ru: {
@@ -739,28 +874,28 @@
                 },
                 hero: {
                     title: "Делай Проще!",
-                    subtitle: "Компания мобильных приложений, которые расширяют возможности вашей повседневной жизни с помощью инноваций и простоты!"
+                    subtitle: "Компания мобильных приложений, которые расширяют возможнос��и ваш��й повседневной жизни с помощью инновац��й и простоты!"
                 },
                 apps: {
-                    title: "Наши Приложения",
+                    title: "Наши Пр��ложения",
                     appStore: "App Store",
                     playStore: "Play Store",
                     privacyPolicy: "Политика Конфиденциальности",
                     support: "Поддержка",
-                    accountDeletion: "Удаление Аккаунта",
+                    accountDeletion: "Удаление ��ккаунта",
                     mooddrake: {
-                        desc: "MoodDrake - это больше, чем просто улучшение настроения, это мистический компаньон для эмоционального исцеления и духовной ясности. Откройте для себя мощные аффирмации, управляемые медитации, упражнения для поднятия настроения и коллекцию крошечных ритуалов, предназначенных для поддержки вашего внутреннего баланса."
+                        desc: "MoodDrake - это больше, чем просто улучшение настроения, это мистический компаньон для эмо��ионального исцеления и духовной ясности. Откройте для себя мощные аффирмац��и, управляемые медитации, упражнения для поднятия настроения и кол��екцию крошечных ритуалов, предназначенных для поддержки вашего внутреннего баланса."
                     },
                     tasknest: {
-                        desc: "TaskNest - это красиво простое приложение для списка дел, созданное, чтобы помочь вам организовать свою жизнь самым чистым, быстрым и легким способом. Нет меню для изучения, нет сложных функций, нет отвлекающих факторов - только один четкий экран, где все подходит и все течет."
+                        desc: "TaskNest - это красиво простое приложение для списка дел, созданное, чтобы помочь вам организовать свою жизнь самым чистым, быстрым и легким способом. Нет меню для изучения, нет сложных функций, нет отвлекающих ���акторов - тол��ко один четкий экран, где все подходит и все течет."
                     }
                 },
                 contact: {
-                    title: "Свяжитесь с Нами",
-                    subtitle: "Есть вопросы или отзывы? Мы будем рады услышать вас."
+                    title: "Свяжитес�� с Н��м��",
+                    subtitle: "Есть вопросы и��и отзывы? Мы будем рады услышать вас."
                 },
                 footer: {
-                    tagline: "Превращаем идеи в реальность, по одному приложению за раз.",
+                    tagline: "Превращаем ��деи в реальность, по одному приложению за раз.",
                     copyright: "© 2025 Valkyrie Dynamics. Все права защищены."
                 },
                 common: {
@@ -771,12 +906,12 @@
                         title: "Политика Конфиденциальности MoodDrake"
                     },
                     tasknest: {
-                        title: "Политика Конфиденциальности TaskNest"
+                        title: "Политика Конфиде��циальности TaskNest"
                     }
                 },
                 support: {
-                    needHelp: "Нужна помощь?",
-                    description: "Если у вас возникли проблемы при использовании приложения, наша команда здесь, чтобы помочь вам. Ознакомьтесь с часто задаваемыми вопросами ниже или свяжитесь с нами напрямую по электронной почте.",
+                    needHelp: "Нужна помо��ь?",
+                    description: "Если у вас возникли проблемы при использовании приложения, наша команда здесь, чтобы помочь вам. Ознакомьтесь с ч��сто задаваемыми вопросами ниже или свяжитесь с нами напрямую по электронной почте.",
                     contactUs: "Свяжитесь с Нами",
                     contactDescription: "По вопросам, предложениям или сообщениям об ошибках пишите нам на:",
                     mooddrake: {
@@ -789,9 +924,9 @@
                 },
                 deletion: {
                     title: "Как Удалить ваш Аккаунт MoodDrake",
-                    intro: "MoodDrake позволяет пользователям удалять свой аккаунт в любое время.",
-                    cantAccess: "Не можете получить доступ к приложению?",
-                    emailInstructions: "Если у вас больше нет доступа к приложению, вы также можете запросить удаление, отправив нам письмо по адресу:"
+                    intro: "MoodDrake позволяет пользователям удалять свой аккаунт �� любое время.",
+                    cantAccess: "Не может�� получить дост��п к приложению?",
+                    emailInstructions: "Если у вас больше нет доступа к при��ожению, вы т��кже можете запросить удаление, о��правив нам письмо по адресу:"
                 }
             },
             tr: {
@@ -812,10 +947,10 @@
                     support: "Destek",
                     accountDeletion: "Hesap Silme",
                     mooddrake: {
-                        desc: "MoodDrake bir ruh hali yükseltici olmaktan çok daha fazlası, duygusal iyileşme ve ruhsal berraklık için mistik bir yoldaştır. Güçlü afirmasyonları, yönlendirilmiş meditasyonları, ruh hali yükselten egzersizleri ve iç dengenizi desteklemek için tasarlanmış küçük ritüeller koleksiyonunu keşfedin."
+                        desc: "MoodDrake bir ruh hali yükseltici olmaktan çok daha fazlası, duygusal iyileşme ve ruhsal berraklık için mistik bir yoldaştır. Güçlü afirmasyonları, y��nlendirilmiş meditasyonları, ruh hali yükselten egzersizleri ve iç dengenizi desteklemek için tasarlanmış küçük rit��eller koleksiyonunu keşfedin."
                     },
                     tasknest: {
-                        desc: "TaskNest, hayatınızı en temiz, en hızlı ve en kolay şekilde organize etmenize yardımcı olmak için oluşturulmuş güzel bir şekilde basit bir yapılacaklar listesi uygulamasıdır. Öğrenilecek menü yok, karmaşık özellikler yok, dikkat dağıtıcı şeyler yok—her şeyin uyduğu ve her şeyin aktığı sadece bir net ekran."
+                        desc: "TaskNest, hayatınızı en temiz, en h��zlı ve en kolay şekilde organize etmenize yardımc�� olmak için oluşturulmuş güzel bir şekilde basit bir yapılacaklar listesi uygulamasıdır. Öğrenilecek menü yok, karmaşık özellikler yok, dikkat dağıtıcı şeyler yok—her şeyin uyduğu ve her şeyin aktığı sadece bir net ekran."
                     }
                 },
                 contact: {
@@ -845,7 +980,7 @@
                     needHelp: "Yardıma mı ihtiyacınız var?",
                     description: "Uygulamayı kullanırken herhangi bir sorunla karşılaşırsanız, ekibimiz size yardımcı olmak için burada. Aşağıdaki sık sorulan soruları kontrol edin veya doğrudan e-posta yoluyla bizimle iletişime geçin.",
                     contactUs: "Bize Ulaşın",
-                    contactDescription: "Sorular, öneriler veya hata raporları için bize e-posta gönderin:",
+                    contactDescription: "Sorular, öneriler veya hata raporları için bize e-posta g��nderin:",
                     mooddrake: {
                         title: "MoodDrake Destek"
                     },
@@ -1131,5 +1266,5 @@
             });
         }
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9bf0319082373101',t:'MTc2ODU5MzU2OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9bf124f2b1931eea',t:'MTc2ODYwMzUzOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
