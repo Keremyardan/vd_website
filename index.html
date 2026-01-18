@@ -787,7 +787,7 @@
                     needHelp: "¿Necesitas ayuda?",
                     description: "Si tienes algún problema al usar la aplicación, nuestro equipo está aquí para ayudarte. Consulta las preguntas frecuentes a continuación o contáctanos directamente por correo electrónico.",
                     contactUs: "Contáctanos",
-                    contactDescription: "Para preguntas, sugerencias o informes de errores, env����anos un correo a:",
+                    contactDescription: "Para preguntas, sugerencias o informes de errores, env��������anos un correo a:",
                     mooddrake: {
                         title: "Soporte de MoodDrake"
                     },
@@ -807,11 +807,11 @@
                 nav: {
                     home: "ا����ئيسية",
                     apps: "التطب��قات",
-                    contact: "اتصل ��ن��"
+                    contact: "��تصل ��ن��"
                 },
                 hero: {
                     title: "اجعلها بسيطة!",
-                    subtitle: "شركة تطبيقات الهاتف المحمول التي ����عزز حياتك اليومية بالابتكار والبساطة!"
+                    subtitle: "شركة تطبيقات الهاتف المحمول التي ����عزز ح��اتك اليومية بالابتكار والبساطة!"
                 },
                 apps: {
                     title: "تطبيقاتنا",
@@ -824,7 +824,7 @@
                         desc: "MoodDrake هو أكثر من مجرد معزز للمزاج، إنه رفيق صوفي للشفاء العاطفي والوضوح الروحي. ا��تشف التأكي��ات القوية والتأملات الموجهة والتما��ين المعززة للمزاج ومجموعة من الطقو�� الصغيرة المصممة لدعم توازنك الداخلي."
                     },
                     tasknest: {
-                        desc: "TaskNest هو تطبيق قائمة مهام بسيط بشكل جميل تم بناؤه لمساع��تك في تنظيم ��ياتك بأنظف وأسرع وأسهل ط����ي���� ممكنة. لا توجد قو������م لتعلمها، ولا ميزات معقدة، ولا مشتتات—مجرد شاشة واضحة واحدة حيث يتناسب كل شيء ويتدفق كل شيء."
+                        desc: "TaskNest هو تطبيق قائم�� مهام بسيط بشكل جميل تم بناؤه لمساع��تك في تنظيم ��ياتك بأنظف وأسرع وأسهل ط����ي���� ممكنة. لا توجد قو������م لتعلمها، ولا ميزات معقدة، ولا مشتتات—مجرد شاشة واضحة واحدة حيث يتناسب كل شيء ويتدفق كل شيء."
                     }
                 },
                 contact: {
@@ -887,7 +887,7 @@
                         desc: "MoodDrake - это больше, чем просто улучшение настроения, это мистический компаньон для эмо��ионального исцеления и духовной ясности. Откройте для себя мощные аффирмац��и, управляемые медитации, упражнения для поднятия настроения и кол��екцию крошечных ритуалов, предназначенных для поддержки вашего внутреннего баланса."
                     },
                     tasknest: {
-                        desc: "TaskNest - это красиво простое приложение для списка дел, созданное, чтобы помочь вам организовать свою жизнь самым чистым, быстрым и легким способом. Нет меню для изучения, нет сложных функций, нет отвлекающих ���акторов - тол��ко один четкий экран, где все подходит и все т����чет."
+                        desc: "TaskNest - это красиво простое приложение для списка дел, созданное, чтобы помочь вам организовать свою жизнь самым чистым, быстрым и легким способом. Нет меню для изучения, нет сложных функций, нет отвлекающих ���акторов - тол��ко один четкий экран, где все подходит и все т������чет."
                     }
                 },
                 contact: {
@@ -1062,6 +1062,13 @@
         // Initialize language on page load
         document.addEventListener('DOMContentLoaded', () => {
             changeLanguage(currentLang);
+            
+            // Check if URL has #apps hash to scroll to apps section
+            if (window.location.hash === '#apps') {
+                setTimeout(() => {
+                    scrollToSection('apps');
+                }, 500);
+            }
         });
 
         // Close dropdown when clicking outside
@@ -1272,5 +1279,5 @@
             });
         }
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9bf12e06c5aa3101',t:'MTc2ODYwMzkxMC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9bfa11d414badb31',t:'MTc2ODY5NzEyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
