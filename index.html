@@ -227,6 +227,11 @@
             z-index: 1000;
         }
         
+        [dir="rtl"] .lang-dropdown {
+            right: auto;
+            left: 0;
+        }
+        
         .lang-dropdown.active {
             display: block;
         }
@@ -351,7 +356,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
      <div class="flex justify-between items-center h-16">
       <div></div>
-      <div class="flex items-center gap-4 sm:gap-8"><a onclick="scrollToSection('hero')" class="nav-link hover:text-gray-300 text-sm sm:text-base cursor-pointer" data-i18n="nav.home">Home</a> <a onclick="scrollToSection('apps')" class="nav-link hover:text-gray-300 text-sm sm:text-base cursor-pointer" data-i18n="nav.apps">Apps</a> <a onclick="scrollToSection('contact')" class="nav-link hover:text-gray-300 text-sm sm:text-base cursor-pointer" data-i18n="nav.contact">Contact</a> <!-- Language Selector -->
+      <div class="flex items-center gap-4 sm:gap-8"><a onclick="scrollToSection('hero')" class="nav-link hover:text-gray-300 text-sm sm:text-base cursor-pointer" data-i18n="nav.home">Home</a> <a onclick="scrollToSection('mooddrake')" class="nav-link hover:text-gray-300 text-sm sm:text-base cursor-pointer">MoodDrake</a> <a onclick="scrollToSection('tasknest')" class="nav-link hover:text-gray-300 text-sm sm:text-base cursor-pointer">TaskNest</a> <a onclick="scrollToSection('contact')" class="nav-link hover:text-gray-300 text-sm sm:text-base cursor-pointer" data-i18n="nav.contact">Contact</a> <!-- Language Selector -->
        <div class="lang-selector"><button onclick="toggleLangDropdown()" class="flex items-center gap-2 hover:text-gray-300 text-sm sm:text-base cursor-pointer"> <span id="current-lang-flag">🌐</span> </button>
         <div id="lang-dropdown" class="lang-dropdown">
          <div class="lang-option" onclick="changeLanguage('en')" data-lang="en"><span>🇬🇧</span> <span>English</span>
@@ -371,21 +376,20 @@
     </div>
    </nav><!-- HOME PAGE -->
    <div id="home" class="page active"><!-- Hero Section -->
-    <section id="hero" class="min-h-screen flex items-center justify-center grid-bg relative pt-16">
+    <section id="hero" class="min-h-screen flex items-center justify-center grid-bg relative pt-16 pb-4">
      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black to-black opacity-70"></div>
      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
       <div class="fade-in-up" style="animation-delay: 0.2s;"><!-- Company Logo -->
-       <div class="mb-16 flex justify-center"><img id="company-logo" src="https://i.imgur.com/zfIfWt7.png" alt="Company Logo" class="company-logo" loading="lazy" onerror="this.style.display='none';">
+       <div class="mb-12 flex justify-center"><img id="company-logo" src="https://i.imgur.com/zfIfWt7.png" alt="Company Logo" class="company-logo" loading="lazy" onerror="this.style.display='none';">
        </div>
-       <h1 class="hero-title title-font text-4xl sm:text-5xl md:text-7xl font-black mb-6" id="hero-title" data-i18n="hero.title">Keep It Simple!</h1>
-       <p class="hero-subtitle text-lg sm:text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto" id="hero-subtitle" data-i18n="hero.subtitle">Mobile applications company that empower your daily life with innovation and simplicity!</p>
+       <h1 class="hero-title title-font text-4xl sm:text-5xl md:text-7xl font-black mb-3" id="hero-title" data-i18n="hero.title">Keep It Simple!</h1>
+       <p class="hero-subtitle text-lg sm:text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-0" id="hero-subtitle" data-i18n="hero.subtitle">Mobile applications company that empower your daily life with innovation and simplicity!</p>
       </div>
      </div>
-    </section><!-- Apps Section -->
-    <section id="apps" class="py-32 bg-gradient-to-b from-black to-gray-900">
+    </section><!-- MoodDrake Section -->
+    <section id="mooddrake" class="py-8 bg-gradient-to-b from-black to-gray-900">
      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="title-font text-4xl sm:text-5xl font-bold text-center mb-16" data-i18n="apps.title">Our Apps</h2><!-- MoodDrake -->
-      <div class="app-card bg-black rounded-3xl p-6 sm:p-10 mb-12 glow">
+      <div class="app-card bg-black rounded-3xl p-6 sm:p-10 glow">
        <div class="grid md:grid-cols-2 gap-8 items-center">
         <div>
          <div class="mb-6 flex items-center gap-4"><img id="mooddrake-icon-mobile" src="https://i.imgur.com/Di7vZSM.png" alt="MoodDrake Icon" class="app-icon md:hidden" loading="lazy" onerror="this.src='https://i.imgur.com/Di7vZSM.png';">
@@ -406,7 +410,11 @@
          </div>
         </div>
        </div>
-      </div><!-- TaskNest -->
+      </div>
+     </div>
+    </section><!-- TaskNest Section -->
+    <section id="tasknest" class="py-8 bg-gradient-to-b from-gray-900 to-black">
+     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="app-card bg-black rounded-3xl p-6 sm:p-10 glow">
        <div class="grid md:grid-cols-2 gap-8 items-center">
         <div class="hidden md:flex justify-center order-2 md:order-1">
@@ -431,11 +439,11 @@
       </div>
      </div>
     </section><!-- Contact Section -->
-    <section id="contact" class="py-20 bg-black">
+    <section id="contact" class="py-8 bg-black">
      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="title-font text-4xl sm:text-5xl font-bold mb-8 text-center" data-i18n="contact.title">Contact Us</h2>
-      <p class="text-xl text-gray-400 mb-16 max-w-2xl mx-auto text-center" data-i18n="contact.subtitle">Have questions or feedback? We'd love to hear from you.</p><!-- Email Section -->
-      <div class="mb-16 text-center"><a href="mailto:valkyriadynamica@gmail.com" class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-4 bg-gradient-to-r from-white to-gray-200 text-black px-4 py-3 sm:px-12 sm:py-6 rounded-2xl font-bold text-xs sm:text-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
+      <h2 class="title-font text-4xl sm:text-5xl font-bold mb-4 text-center" data-i18n="contact.title">Contact Us</h2>
+      <p class="text-xl text-gray-400 mb-8 max-w-2xl mx-auto text-center" data-i18n="contact.subtitle">Have questions or feedback? We'd love to hear from you.</p><!-- Email Section -->
+      <div class="mb-8 text-center"><a href="mailto:valkyriadynamica@gmail.com" class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-4 bg-gradient-to-r from-white to-gray-200 text-black px-4 py-3 sm:px-12 sm:py-6 rounded-2xl font-bold text-xs sm:text-xl hover:scale-110 hover:shadow-2xl transition-all duration-300">
         <svg class="w-5 h-5 sm:w-8 sm:h-8 flex-shrink-0" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg><span class="break-all">valkyriadynamica@gmail.com</span> </a>
       </div><!-- Social Media Links -->
@@ -449,7 +457,7 @@
       </div>
      </div>
     </section><!-- Footer -->
-    <footer class="bg-black border-t border-gray-900 py-12">
+    <footer class="bg-black border-t border-gray-900 py-8">
      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <p class="text-gray-600 text-sm" data-i18n="footer.copyright">© 2025 Valkyrie Dynamics. All rights reserved.</p>
      </div>
@@ -761,7 +769,7 @@
                         desc: "MoodDrake es más que un potenciador del estado de ánimo, es un compañero místico para la curación emocional y la claridad espiritual. Descubre afirmaciones poderosas, meditaciones guiadas, ejercicios para mejorar el ánimo y una colección de pequeños rituales diseñados para apoyar tu equilibrio interior."
                     },
                     tasknest: {
-                        desc: "TaskNest es una aplicación de lista de tareas hermosamente simple construida para ayudarte a organizar tu vida de la manera más limpia, rápida y sin esfuerzo posible. Sin menús que aprender, sin funciones complicadas, sin distracciones���solo una pantalla clara donde todo encaja y todo fluye."
+                        desc: "TaskNest es una aplicación de lista de tareas hermosamente simple construida para ayudarte a organizar tu vida de la manera más limpia, rápida y sin esfuerzo posible. Sin menús que aprender, sin funciones complicadas, sin distracciones—solo una pantalla clara donde todo encaja y todo fluye."
                     }
                 },
                 contact: {
@@ -787,7 +795,7 @@
                     needHelp: "¿Necesitas ayuda?",
                     description: "Si tienes algún problema al usar la aplicación, nuestro equipo está aquí para ayudarte. Consulta las preguntas frecuentes a continuación o contáctanos directamente por correo electrónico.",
                     contactUs: "Contáctanos",
-                    contactDescription: "Para preguntas, sugerencias o informes de errores, env��������anos un correo a:",
+                    contactDescription: "Para preguntas, sugerencias o informes de errores, envíanos un correo a:",
                     mooddrake: {
                         title: "Soporte de MoodDrake"
                     },
@@ -799,40 +807,40 @@
                 deletion: {
                     title: "Cómo Eliminar tu Cuenta de MoodDrake",
                     intro: "MoodDrake permite a los usuarios eliminar su cuenta en cualquier momento.",
-                    cantAccess: "¿No puedes acceder a la aplicación?",
+                    cantAccess: "¿No puedes acceder a la aplicaci����n?",
                     emailInstructions: "Si ya no tienes acceso a la aplicación, también puedes solicitar la eliminación enviándonos un correo a:"
                 }
             },
             ar: {
                 nav: {
-                    home: "ا����ئيسية",
-                    apps: "التطب��قات",
-                    contact: "��تصل ��ن��"
+                    home: "الرئيسية",
+                    apps: "التطبيقات",
+                    contact: "اتصل بنا"
                 },
                 hero: {
                     title: "اجعلها بسيطة!",
-                    subtitle: "شركة تطبيقات الهاتف المحمول التي ����عزز ح��اتك اليومية بالابتكار والبساطة!"
+                    subtitle: "شركة تطبيقات الهاتف ال��حمول التي تعزز ح����تك ����ل��ومية بالابتكار والبساطة!"
                 },
                 apps: {
                     title: "تطبيقاتنا",
-                    appStore: "آب س��ور",
-                    playStore: "بلاي ستور",
-                    privacyPolicy: "سياسة الخصوصية",
+                    appStore: "آب ستور",
+                    playStore: "بلاي ��تور",
+                    privacyPolicy: "سيا��ة الخصوصية",
                     support: "الدعم",
                     accountDeletion: "حذف الحساب",
                     mooddrake: {
-                        desc: "MoodDrake هو أكثر من مجرد معزز للمزاج، إنه رفيق صوفي للشفاء العاطفي والوضوح الروحي. ا��تشف التأكي��ات القوية والتأملات الموجهة والتما��ين المعززة للمزاج ومجموعة من الطقو�� الصغيرة المصممة لدعم توازنك الداخلي."
+                        desc: "MoodDrake هو أكثر من مجرد معزز للمزاج، إنه رفيق صوفي للشفاء العاطفي والوضوح الروحي. اكتشف التأكيدات القوية والتأملات الموجهة والتمارين المعززة للمزاج ومجموعة من الطقوس الصغيرة المصممة لدعم توازنك الداخلي."
                     },
                     tasknest: {
-                        desc: "TaskNest هو تطبيق قائم�� مهام بسيط بشكل جميل تم بناؤه لمساع��تك في تنظيم ��ياتك بأنظف وأسرع وأسهل ط����ي���� ممكنة. لا توجد قو������م لتعلمها، ولا ميزات معقدة، ولا مشتتات—مجرد شاشة واضحة واحدة حيث يتناسب كل شيء ويتدفق كل شيء."
+                        desc: "TaskNest هو تطبي�� ��ائمة مهام بسيط بشكل جميل تم بناؤه لمساعدتك في تنظيم حياتك بأنظف وأسرع وأسهل طريقة ممك��ة. لا توجد قوائم لتعلمها، ولا ميزات معقدة، ولا مشتتات—مجرد شاشة واضحة وا��دة حيث يتناسب كل شيء ويتدفق كل شيء."
                     }
                 },
                 contact: {
                     title: "اتصل بنا",
-                    subtitle: "هل لديك أسئلة ��و ملاحظات؟ نود أن نسمع منك."
+                    subtitle: "هل لديك أسئلة أو ملاحظات؟ نود ��ن ��سمع منك."
                 },
                 footer: {
-                    tagline: "تحوي�� الأفكار إلى واقع، تطبيق واحد في كل مرة.",
+                    tagline: "تحويل الأفكار إلى واقع، تطبيق واحد في كل مرة.",
                     copyright: "© 2025 Valkyrie Dynamics. جميع الحقوق محفوظة."
                 },
                 common: {
@@ -840,7 +848,7 @@
                 },
                 privacy: {
                     mooddrake: {
-                        title: "سياسة خص��صية MoodDrake"
+                        title: "سياسة خصوصية MoodDrake"
                     },
                     tasknest: {
                         title: "سياسة خصوصية TaskNest"
@@ -848,7 +856,7 @@
                 },
                 support: {
                     needHelp: "هل تحتاج إلى مساعدة؟",
-                    description: "إذا كنت تواجه ��ي مشاكل أثناء استخدام التطبيق، فري��نا هنا لمسا��د��ك. تحقق من الأسئلة الشائعة أدناه أو اتصل بنا مباشرة عبر البريد الإلكتروني.",
+                    description: "إذا كنت تواجه أي مشاكل أثناء استخدام ��لتطبيق، فريقنا هنا لمساعدتك. ��حقق من الأسئلة الش���ئعة أدناه أو اتصل بنا مباشرة عبر البريد الإلكتروني.",
                     contactUs: "اتصل بنا",
                     contactDescription: "للأسئلة أو الاقتراحات أو تقارير الأخطاء، راسلنا على:",
                     mooddrake: {
@@ -861,42 +869,42 @@
                 },
                 deletion: {
                     title: "كيفية حذف حساب MoodDrake الخاص بك",
-                    intro: "يسمح MoodDrake للم��تخدمين ب��ذف حساباتهم في أي وقت.",
-                    cantAccess: "لا يمكنك الوصول إلى التطبيق؟",
-                    emailInstructions: "إذا لم يعد بإمكانك الوصول إلى التطبيق، يمكنك أيضًا طلب الح��ف عن طريق مراسلتنا على:"
+                    intro: "يسمح MoodDrake للمستخدمين بحذف حساباتهم في أي وقت.",
+                    cantAccess: "لا يمكنك الوصول ���لى التطبيق؟",
+                    emailInstructions: "��ذا ل�� يعد ����إمكانك الوصول إلى التطبيق، يمكنك أيضًا ��لب الحذف عن طريق مر��سلت��ا على:"
                 }
             },
             ru: {
                 nav: {
-                    home: "Главная",
+                    home: "��лавна��",
                     apps: "Приложения",
                     contact: "Контакты"
                 },
                 hero: {
                     title: "Делай Проще!",
-                    subtitle: "Компания мобильных приложений, которые расширяют возможнос��и ваш��й повседневной жизни с помощью инновац��й и простоты!"
+                    subtitle: "Компания мобильных приложений, которые расширяют возможности вашей повседневной жизни с помощью инноваций и простоты!"
                 },
                 apps: {
-                    title: "Наши Пр��ложения",
+                    title: "Наши Приложения",
                     appStore: "App Store",
                     playStore: "Play Store",
                     privacyPolicy: "Политика Конфиденциальности",
                     support: "Поддержка",
-                    accountDeletion: "Удаление ��ккаунта",
+                    accountDeletion: "��даление Акка��н��а",
                     mooddrake: {
-                        desc: "MoodDrake - это больше, чем просто улучшение настроения, это мистический компаньон для эмо��ионального исцеления и духовной ясности. Откройте для себя мощные аффирмац��и, управляемые медитации, упражнения для поднятия настроения и кол��екцию крошечных ритуалов, предназначенных для поддержки вашего внутреннего баланса."
+                        desc: "MoodDrake - это больше, ч��м ��росто улучшение настроения, это мистический компаньон для эмоционального исцеления и духовной ясности. ��ткройте для ��ебя мощные аффирмации, у��равляемые ��ед��тации, упра��н����ия для поднятия настроения и ��оллекцию крошечных ритуалов, предназначенных для поддержки вашего внутреннего баланса."
                     },
                     tasknest: {
-                        desc: "TaskNest - это красиво простое приложение для списка дел, созданное, чтобы помочь вам организовать свою жизнь самым чистым, быстрым и легким способом. Нет меню для изучения, нет сложных функций, нет отвлекающих ���акторов - тол��ко один четкий экран, где все подходит и все т������чет."
+                        desc: "TaskNest - это красиво простое приложение для списка дел, созданное, чтобы помочь вам организовать свою жизнь самым чистым, быстрым и легким способом. Нет меню для изучения, нет сложных функций, нет отвлекающих факторов - только один четкий экран, где все подходит и все течет."
                     }
                 },
                 contact: {
-                    title: "Свяжитес�� с Н��м��",
-                    subtitle: "Есть вопросы и��и отзывы? Мы будем рады услышать вас."
+                    title: "Свяжитесь с Н������и",
+                    subtitle: "Есть воп��осы или о��зывы? ��ы будем рады усл��шать вас."
                 },
                 footer: {
-                    tagline: "Превращаем ��деи в реальность, по одному приложению за раз.",
-                    copyright: "© 2025 Valkyrie Dynamics. Все права защищены."
+                    tagline: "Превращаем идеи в реальность, по одному приложению ��а раз.",
+                    copyright: "© 2025 Valkyrie Dynamics. Все права защи��ен��."
                 },
                 common: {
                     backToHome: "Вернуться на Главную"
@@ -906,12 +914,12 @@
                         title: "Политика Конфиденциальности MoodDrake"
                     },
                     tasknest: {
-                        title: "Политика Конфиде��циальности TaskNest"
+                        title: "Политика Конфиденциальности TaskNest"
                     }
                 },
                 support: {
-                    needHelp: "Нужна помо��ь?",
-                    description: "Если у вас возникли проблемы при использовани�� приложения, наша команда здесь, чтобы помочь вам. Ознакомьтесь с ч��сто задаваемыми вопросами ниже или свяжитесь с нами напрямую по электронной почте.",
+                    needHelp: "Нужна помощь?",
+                    description: "Если у вас возникли проблемы при использовании приложения, наша команда здесь, чтобы помочь вам. Ознакомьтесь с часто задаваемыми вопросами ниже или с��яжитесь с нами напрямую по электронной почте.",
                     contactUs: "Свяжитесь с Нами",
                     contactDescription: "По вопросам, предложениям или сообщениям об ошибках пишите нам на:",
                     mooddrake: {
@@ -923,10 +931,10 @@
                     }
                 },
                 deletion: {
-                    title: "Как Удалить ваш Аккаунт MoodDrake",
-                    intro: "MoodDrake позволяет пользователям удалять свой аккаунт �� любое время.",
-                    cantAccess: "Не может�� получить дост��п к приложению?",
-                    emailInstructions: "Если у вас больше нет доступа к при��ожению, вы т��кже ��ожете ��апросить удаление, о��правив нам письмо по адресу:"
+                    title: "Как Удалить ваш аккаунт MoodDrake",
+                    intro: "MoodDrake позволяет пользователям удалять свой аккаунт в любое время.",
+                    cantAccess: "Не ��ожете получить доступ к приложению?",
+                    emailInstructions: "Если у вас больше нет доступа к приложению, в�� также може��е запросить удаление, отправив нам письмо по адресу:"
                 }
             },
             tr: {
@@ -937,7 +945,7 @@
                 },
                 hero: {
                     title: "Basit Tut!",
-                    subtitle: "Yenilikçi ve basit mobil uygulamalarla günlük hayatınızı güçlendiren mobil uygulama şirketi!"
+                    subtitle: "Yenilik��i ve basit mobil uygulamalarla g��nlük hayatınız�� güçlendiren mobil uygulama şirketi!"
                 },
                 apps: {
                     title: "Uygulamalarımız",
@@ -947,10 +955,10 @@
                     support: "Destek",
                     accountDeletion: "Hesap Silme",
                     mooddrake: {
-                        desc: "MoodDrake bir ruh hali yükseltici olmaktan çok daha fazlası, duygusal iyileşme ve ruhsal berraklık için mistik bir yoldaştır. Güçlü afirmasyonları, y��nlendirilmiş meditasyonları, ruh hali yükselten egzersizleri ve iç dengenizi desteklemek için tasarlanmış küçük rit��eller koleksiyonunu keşfedin."
+                        desc: "MoodDrake bir ruh hali yükseltici olmaktan çok daha fazlası, duygusal iyileşme ve ruhsal berraklık için mistik bir yoldaştır. Güçlü afirmasyonları, yönlendirilmiş meditasyonları, ruh hali yükselten egzersizleri ve iç dengenizi desteklemek için tasarlanmış küçük ritüeller koleksiyonunu keşfedin."
                     },
                     tasknest: {
-                        desc: "TaskNest, hayatınızı en temiz, en h��zlı ve en kolay şekilde organize etmenize yardımc�� olmak için oluşturulmuş güzel bir şekilde basit bir yapılacaklar listesi uygulamasıdır. Öğrenilecek menü yok, karmaşık özellikler yok, dikkat dağıtıcı şeyler yok—her şeyin uyduğu ve her şeyin aktığı sadece bir net ekran."
+                        desc: "TaskNest, hayatınızı en temiz, en hızlı ve en kolay şekilde organize etmenize yardımcı olmak için oluşturulmuş güzel bir şekilde basit bir yapılacaklar listesi uygulamasıdır. Öğrenilecek menü yok, karmaşık özellikler yok, dikkat dağıtıcı şeyler yok—her şeyin uyduğu ve her şeyin aktığı sadece bir net ekran."
                     }
                 },
                 contact: {
@@ -980,7 +988,7 @@
                     needHelp: "Yardıma mı ihtiyacınız var?",
                     description: "Uygulamayı kullanırken herhangi bir sorunla karşılaşırsanız, ekibimiz size yardımcı olmak için burada. Aşağıdaki sık sorulan soruları kontrol edin veya doğrudan e-posta yoluyla bizimle iletişime geçin.",
                     contactUs: "Bize Ulaşın",
-                    contactDescription: "Sorular, öneriler veya hata raporları için bize e-posta g��nderin:",
+                    contactDescription: "Sorular, öneriler veya hata raporları için bize e-posta gönderin:",
                     mooddrake: {
                         title: "MoodDrake Destek"
                     },
@@ -1063,10 +1071,11 @@
         document.addEventListener('DOMContentLoaded', () => {
             changeLanguage(currentLang);
             
-            // Check if URL has #apps hash to scroll to apps section
-            if (window.location.hash === '#apps') {
+            // Check if URL has hash to scroll to specific section
+            const hash = window.location.hash.substring(1); // Remove the #
+            if (hash) {
                 setTimeout(() => {
-                    scrollToSection('apps');
+                    scrollToSection(hash);
                 }, 500);
             }
         });
@@ -1279,5 +1288,5 @@
             });
         }
     </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9bfa11d414badb31',t:'MTc2ODY5NzEyNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9bfa2bffe6e3dd0a',t:'MTc2ODY5ODE5OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
