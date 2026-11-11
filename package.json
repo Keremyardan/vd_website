@@ -1,0 +1,17 @@
+{
+    "version":  "1.0.0",
+    "name":  "valkyrie-dynamics",
+    "scripts":  {
+                    "preview":  "vite preview --host 127.0.0.1 --port 4173",
+                    "build":  "vite build",
+                    "dev":  "vite --host 127.0.0.1 --port 5173 --strictPort"
+                },
+    "devDependencies":  {
+                            "vite":  "8.3.8"
+                        },
+    "type":  "module",
+    "dependencies":  {
+                         "three":  "0.187.0"
+                     },
+    "private":  true
+}
