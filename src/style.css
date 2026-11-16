@@ -6,7 +6,7 @@
 .navigation-shell,.hero-copy,.application-copy,.contact{transform:translateZ(0)}
 .motion-control{padding:0;line-height:0;appearance:none}
 .motion-control svg{display:block;grid-area:1/1}
-.hero-company-logo{width:clamp(220px,26vw,360px);max-width:75vw;height:auto;object-fit:contain;margin:0 auto 16px}
+.hero-company-logo{width:clamp(220px,26vw,360px);max-width:75vw;height:auto;object-fit:contain;margin:0 auto 52px}
 @media(min-width:761px){
   .navigation-shell{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
   .navigation-links{grid-column:2;justify-self:center}
@@ -49,6 +49,7 @@ html{scrollbar-gutter:stable both-edges}
 /* One-line mobile navigation with larger labels and no reserved logo gutter. */
 @media(max-width:760px){
   html{scroll-padding-top:72px}
+  .hero-company-logo{width:clamp(170px,48vw,230px);max-width:68vw;margin-bottom:60px}
   .navigation-shell{top:8px;left:8px;right:8px;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:8px;min-height:50px;padding:6px 9px}
   .brand{display:none}
   .navigation-links{position:relative;grid-column:1;grid-row:1;display:flex;min-width:0;width:100%;padding-inline-start:clamp(38px,12vw,50px);justify-content:center;column-gap:clamp(5px,1.5vw,10px);overflow-x:auto;scrollbar-width:none}
@@ -69,3 +70,4 @@ html{scrollbar-gutter:stable both-edges}
   .motion-control{width:22px;height:22px}
   .language-button{width:27px;height:27px}
 }
+@media(min-width:761px){.navigation-links a{font-size:14px}}
