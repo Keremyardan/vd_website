@@ -164,7 +164,7 @@ function refreshScroll(now=performance.now(),immediate=false) {
     applicationFades.set(element,smooth((nextAnchor-scrollPosition)/distance));
   }
   const delta=fadeTime?Math.min((now-fadeTime)/1000,.1):1/60;
-  const blend=1-Math.exp(-delta*10);
+  const blend=1-Math.exp(-delta*16);
   fadeTime=now;
   let settling=false;
   let current='hero';
@@ -192,7 +192,7 @@ function refreshScroll(now=performance.now(),immediate=false) {
     const target=fading?(outside?0:entering*leaving):1;
     const currentOpacity=lastRenderedScroll<=1&&fading&&!visibleAtPageStart?0:fadeValues.get(element);
     const change=(target-currentOpacity)*blend;
-    const maximumChange=Math.min(.1,delta*2.5);
+    const maximumChange=Math.min(.2,delta*5);
     // Clear only fully offscreen content so a quick reversal cannot reveal stale opacity.
     let opacity=immediate||fading&&outside?target:currentOpacity+Math.max(-maximumChange,Math.min(maximumChange,change));
     if(Math.abs(opacity-target)<.0008)opacity=target;
