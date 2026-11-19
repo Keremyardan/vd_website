@@ -13,9 +13,23 @@ export default {
       },
       "apps": {
         "title": "Our Apps",
+        "cocinova": {
+          "desc": "Cocinova is your everyday cooking companion, designed to make discovering recipes and exploring new flavors simple, fun, and inspiring. From quick everyday meals to exciting new dishes, Cocinova brings fresh ideas to your kitchen and turns every cooking experience into something delicious. Because great food starts with a little inspiration!"
+        },
         "appStore": "App Store",
         "playStore": "Play Store",
         "privacyPolicy": "Privacy Policy",
+        "cocinovaPrivacy": {
+          "title": "Cocinova Privacy Policy",
+          "storageHeading": "Data stored on your device",
+          "storage": "Cocinova, developed by Valkyrie Dynamics, stores only your recipe bookmarks and language preference on your device. The app uses them to show your saved recipes and remember your chosen language.",
+          "sharingHeading": "Data collection and sharing",
+          "sharing": "Cocinova does not collect personal data through the app. Your bookmarks and language preference are not sent to our servers or shared with third parties.",
+          "deletionHeading": "Retention and deletion",
+          "deletion": "You can remove bookmarks and change your language preference in the app. Clearing the app’s local data removes both.",
+          "contactHeading": "Privacy questions",
+          "contact": "For questions about this policy, contact Valkyrie Dynamics:"
+        },
         "support": "Support",
         "accountDeletion": "Account Deletion",
         "mooddrake": {
@@ -46,6 +60,9 @@ export default {
       },
       "support": {
         "needHelp": "Need help?",
+        "cocinova": {
+          "title": "Cocinova Support"
+        },
         "description": "If you're experiencing any issues while using the app, our team is here to assist you. Check the frequently asked questions below or contact us directly via email.",
         "contactUs": "Contact Us",
         "contactDescription": "For questions, suggestions, or bug reports, email us at:",
@@ -76,9 +93,23 @@ export default {
       },
       "apps": {
         "title": "Nuestras Aplicaciones",
+        "cocinova": {
+          "desc": "Cocinova te acompaña en la cocina cada día y hace que descubrir recetas y explorar nuevos sabores sea fácil, divertido e inspirador. Desde comidas rápidas para el día a día hasta platos nuevos y sorprendentes, Cocinova aporta ideas frescas a tu cocina y hace que cada vez que cocines salga algo delicioso. ¡Porque la buena comida empieza con un poco de inspiración!"
+        },
         "appStore": "App Store",
         "playStore": "Play Store",
         "privacyPolicy": "Política de Privacidad",
+        "cocinovaPrivacy": {
+          "title": "Política de privacidad de Cocinova",
+          "storageHeading": "Datos guardados en tu dispositivo",
+          "storage": "Cocinova, desarrollada por Valkyrie Dynamics, solo guarda en tu dispositivo tus recetas guardadas y tu preferencia de idioma. La aplicación usa estos datos para mostrarte tus recetas guardadas y recordar el idioma que elegiste.",
+          "sharingHeading": "Recopilación y uso compartido de datos",
+          "sharing": "Cocinova no recopila datos personales a través de la aplicación. Tus recetas guardadas y tu preferencia de idioma no se envían a nuestros servidores ni se comparten con terceros.",
+          "deletionHeading": "Conservación y eliminación",
+          "deletion": "Puedes quitar recetas de tu lista y cambiar el idioma en la aplicación. Si borras los datos locales de la aplicación, se eliminan tanto la lista como la preferencia de idioma.",
+          "contactHeading": "Consultas sobre privacidad",
+          "contact": "Si tienes preguntas sobre esta política, ponte en contacto con Valkyrie Dynamics:"
+        },
         "support": "Soporte",
         "accountDeletion": "Eliminación de Cuenta",
         "mooddrake": {
@@ -109,6 +140,9 @@ export default {
       },
       "support": {
         "needHelp": "¿Necesitas ayuda?",
+        "cocinova": {
+          "title": "Soporte de Cocinova"
+        },
         "description": "Si tienes algún problema al usar la aplicación, nuestro equipo está aquí para ayudarte. Consulta las preguntas frecuentes a continuación o contáctanos directamente por correo electrónico.",
         "contactUs": "Contáctanos",
         "contactDescription": "Para preguntas, sugerencias o informes de errores, envíanos un correo a:",
@@ -139,9 +173,23 @@ export default {
       },
       "apps": {
         "title": "تطبيقاتنا",
+        "cocinova": {
+          "desc": "كوتشينوفا رفيقك اليومي في المطبخ، صُمّم ليجعل اكتشاف الوصفات وتجربة نكهات جديدة أمراً سهلاً وممتعاً وملهماً. من الوجبات اليومية السريعة إلى الأطباق الجديدة والمبتكرة، يقدّم لك كوتشينوفا أفكاراً جديدة ويحوّل كل تجربة طهي إلى فرصة لتحضير شيء لذيذ. لأن الطعام الشهي يبدأ بقليل من الإلهام!"
+        },
         "appStore": "آب ستور",
         "playStore": "بلاي ستور",
         "privacyPolicy": "سياسة الخصوصية",
+        "cocinovaPrivacy": {
+          "title": "سياسة خصوصية Cocinova",
+          "storageHeading": "البيانات المحفوظة على جهازك",
+          "storage": "يحفظ تطبيق Cocinova، الذي تطوّره Valkyrie Dynamics، الوصفات التي تحفظها واللغة التي تختارها على جهازك فقط. يستخدم التطبيق هذه البيانات لعرض وصفاتك المحفوظة وتذكّر لغتك المفضّلة.",
+          "sharingHeading": "جمع البيانات ومشاركتها",
+          "sharing": "لا يجمع Cocinova بيانات شخصية عبر التطبيق. ولا تُرسل وصفاتك المحفوظة أو اللغة التي اخترتها إلى خوادمنا، ولا تُشارك مع أطراف ثالثة.",
+          "deletionHeading": "الاحتفاظ بالبيانات وحذفها",
+          "deletion": "يمكنك إزالة الوصفات من قائمتك وتغيير اللغة من داخل التطبيق. يؤدي مسح بيانات التطبيق المحلية إلى حذف قائمة الوصفات المحفوظة وتفضيل اللغة.",
+          "contactHeading": "استفسارات الخصوصية",
+          "contact": "إذا كانت لديك أسئلة حول هذه السياسة، يمكنك التواصل مع Valkyrie Dynamics:"
+        },
         "support": "الدعم",
         "accountDeletion": "حذف الحساب",
         "mooddrake": {
@@ -172,6 +220,9 @@ export default {
       },
       "support": {
         "needHelp": "هل تحتاج إلى مساعدة؟",
+        "cocinova": {
+          "title": "دعم Cocinova"
+        },
         "description": "إذا كنت تواجه أي مشاكل أثناء استخدام التطبيق، فريقنا هنا لمساعدتك. تحقق من الأسئلة الشائعة أدناه أو اتصل بنا مباشرة عبر البريد الإلكتروني.",
         "contactUs": "اتصل بنا",
         "contactDescription": "للأسئلة أو الاقتراحات أو تقارير الأخطاء، راسلنا على:",
@@ -202,9 +253,23 @@ export default {
       },
       "apps": {
         "title": "Наши Приложения",
+        "cocinova": {
+          "desc": "Cocinova — ваш помощник на кухне на каждый день. С ним легко находить рецепты, пробовать новые вкусы и вдохновляться на кулинарные эксперименты. От быстрых повседневных блюд до необычных новинок — Cocinova подскажет свежие идеи и поможет каждый раз приготовить что-нибудь вкусное. Ведь вкусная еда начинается с капельки вдохновения!"
+        },
         "appStore": "App Store",
         "playStore": "Play Store",
         "privacyPolicy": "Политика Конфиденциальности",
+        "cocinovaPrivacy": {
+          "title": "Политика конфиденциальности Cocinova",
+          "storageHeading": "Данные на вашем устройстве",
+          "storage": "Cocinova, приложение компании Valkyrie Dynamics, хранит на вашем устройстве только закладки с рецептами и выбранный язык. Эти данные нужны, чтобы показывать сохранённые рецепты и запоминать выбранный язык.",
+          "sharingHeading": "Сбор и передача данных",
+          "sharing": "Cocinova не собирает персональные данные через приложение. Ваши закладки и языковые настройки не отправляются на наши серверы и не передаются третьим лицам.",
+          "deletionHeading": "Хранение и удаление",
+          "deletion": "Закладки и настройки хранятся на устройстве. Чтобы удалить закладки, уберите их из списка сохранённых рецептов. Чтобы удалить все локальные данные Cocinova, очистите данные приложения. Язык можно изменить в приложении.",
+          "contactHeading": "Вопросы о конфиденциальности",
+          "contact": "С вопросами об этой политике обращайтесь в Valkyrie Dynamics:"
+        },
         "support": "Поддержка",
         "accountDeletion": "Удаление Аккаунта",
         "mooddrake": {
@@ -235,6 +300,9 @@ export default {
       },
       "support": {
         "needHelp": "Нужна помощь?",
+        "cocinova": {
+          "title": "Поддержка Cocinova"
+        },
         "description": "Если у вас возникли проблемы при использовании приложения, наша команда здесь, чтобы помочь вам. Ознакомьтесь с часто задаваемыми вопросами ниже или свяжитесь с нами напрямую по электронной почте.",
         "contactUs": "Свяжитесь с Нами",
         "contactDescription": "По вопросам, предложениям или сообщениям об ошибках пишите нам на:",
@@ -265,9 +333,23 @@ export default {
       },
       "apps": {
         "title": "Uygulamalarımız",
+        "cocinova": {
+          "desc": "Cocinova, tarif keşfetmeyi ve yeni lezzetler denemeyi kolay, eğlenceli ve ilham verici hâle getiren mutfak arkadaşın. Günlük pratik yemeklerden denemeye değer yeni tariflere kadar mutfağına taze fikirler getirir ve her seferinde lezzetli bir şeyler pişirmene yardımcı olur. Çünkü güzel yemekler biraz ilhamla başlar!"
+        },
         "appStore": "App Store",
         "playStore": "Play Store",
         "privacyPolicy": "Gizlilik Politikası",
+        "cocinovaPrivacy": {
+          "title": "Cocinova Gizlilik Politikası",
+          "storageHeading": "Cihazınızda saklanan veriler",
+          "storage": "Valkyrie Dynamics tarafından geliştirilen Cocinova, yalnızca tarif yer imlerinizi ve dil tercihinizi cihazınızda saklar. Uygulama bu bilgileri kaydettiğiniz tarifleri göstermek ve seçtiğiniz dili hatırlamak için kullanır.",
+          "sharingHeading": "Veri toplama ve paylaşma",
+          "sharing": "Cocinova, uygulama üzerinden kişisel veri toplamaz. Tarif yer imleriniz ve dil tercihiniz sunucularımıza gönderilmez ve üçüncü taraflarla paylaşılmaz.",
+          "deletionHeading": "Saklama ve silme",
+          "deletion": "Yer imlerinizi uygulama içinden kaldırabilir, dil tercihinizi değiştirebilirsiniz. Cihazınızda saklanan tüm Cocinova verilerini silmek için uygulamanın yerel verilerini temizleyebilirsiniz.",
+          "contactHeading": "Gizlilikle ilgili sorular",
+          "contact": "Bu politikayla ilgili sorularınız için Valkyrie Dynamics ile iletişime geçebilirsiniz:"
+        },
         "support": "Destek",
         "accountDeletion": "Hesap Silme",
         "mooddrake": {
@@ -302,6 +384,9 @@ export default {
       },
       "support": {
         "needHelp": "Yardıma mı ihtiyacınız var?",
+        "cocinova": {
+          "title": "Cocinova Destek"
+        },
         "description": "Uygulamayı kullanırken herhangi bir sorunla karşılaşırsanız, ekibimiz size yardımcı olmak için burada. Aşağıdaki sık sorulan soruları kontrol edin veya doğrudan e-posta yoluyla bizimle iletişime geçin.",
         "contactUs": "Bize Ulaşın",
         "contactDescription": "Sorular, öneriler veya hata raporları için bize e-posta gönderin:",
@@ -376,6 +461,18 @@ export default {
     }
   },
   "documents": [
+    {
+      "id": "privacy-cocinova",
+      "title": "Cocinova Privacy Policy",
+      "titleKey": "apps.cocinovaPrivacy.title",
+      "body": "<h2 data-i18n=\"apps.cocinovaPrivacy.storageHeading\">Data stored on your device</h2><p data-i18n=\"apps.cocinovaPrivacy.storage\">Cocinova, developed by Valkyrie Dynamics, stores only your recipe bookmarks and language preference on your device. The app uses them to show your saved recipes and remember your chosen language.</p><h2 data-i18n=\"apps.cocinovaPrivacy.sharingHeading\">Data collection and sharing</h2><p data-i18n=\"apps.cocinovaPrivacy.sharing\">Cocinova does not collect personal data through the app. Your bookmarks and language preference are not sent to our servers or shared with third parties.</p><h2 data-i18n=\"apps.cocinovaPrivacy.deletionHeading\">Retention and deletion</h2><p data-i18n=\"apps.cocinovaPrivacy.deletion\">You can remove bookmarks and change your language preference in the app. Clearing the app’s local data removes both.</p><h2 data-i18n=\"apps.cocinovaPrivacy.contactHeading\">Privacy questions</h2><p data-i18n=\"apps.cocinovaPrivacy.contact\">For questions about this policy, contact Valkyrie Dynamics:</p><a href=\"mailto:valkyriadynamica@gmail.com\">valkyriadynamica@gmail.com</a>"
+    },
+    {
+      "id": "support-cocinova",
+      "title": "Cocinova Support",
+      "titleKey": "support.cocinova.title",
+      "body": "<h2 data-i18n=\"support.needHelp\">Need help?</h2><p data-i18n=\"support.contactDescription\">For questions, suggestions, or bug reports, email us at:</p><a href=\"mailto:valkyriadynamica@gmail.com\">valkyriadynamica@gmail.com</a>"
+    },
     {
       "id": "privacy-mooddrake",
       "title": "MoodDrake Privacy Policy",

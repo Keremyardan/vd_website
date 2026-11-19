@@ -23,7 +23,6 @@ html{scrollbar-gutter:stable both-edges}
 .navigation-links a{line-height:1.4}
 .changing-language,.changing-language *{overflow-anchor:none}
 .changing-language{scroll-behavior:auto}
-.release-status{font-size:16px!important;line-height:1.5!important;margin-bottom:0!important}
 @media(max-width:760px){
   html{scroll-padding-top:80px}
   .navigation-shell{display:grid;grid-template-columns:30px minmax(0,1fr) 30px;min-height:52px;left:10px;right:10px;column-gap:4px;padding:7px 6px}

@@ -12,6 +12,11 @@ const languages = [
 ];
 const flagPath = language => `/assets/flags/${language.country}.svg`;
 const picture = (name, id, alt, className='', extension='png') => `<img class="${className}" id="${id}" src="/assets/${name}.${extension}" alt="${alt}" width="1024" height="1024">`;
+const documentArtwork = {
+  mooddrake: { name: 'MoodDrake', extension: 'png' },
+  tasknest: { name: 'TaskNest', extension: 'png' },
+  cocinova: { name: 'Cocinova', extension: 'jpg' }
+};
 const applications = Object.entries(copy.apps).map(([slug, app]) => `
   <section class="chapter application ${slug}" id="${slug}" aria-labelledby="${slug}-title">
     <div class="application-copy">
@@ -23,11 +28,15 @@ const applications = Object.entries(copy.apps).map(([slug, app]) => `
     <div class="fallback-artwork">${picture(slug,slug+'-icon',app.name+' Icon')}</div>
   </section>`).join('');
 
-const comingSoonApplication = `
+const cocinovaApplication = `
   <section class="chapter application cocinova" id="cocinova" aria-labelledby="cocinova-title">
     <div class="application-copy">
       <div class="application-heading" id="cocinova-icon-mobile"><h2 id="cocinova-title">Cocinova</h2></div>
-      <p class="release-status">Coming soon</p>
+      <p id="cocinova-desc" data-copy="apps.cocinova.desc">${t.apps.cocinova.desc}</p>
+      <div class="application-links">
+        <a href="#privacy-cocinova"><span data-copy="apps.privacyPolicy">${t.apps.privacyPolicy}</span> →</a>
+        <a href="#support-cocinova"><span data-copy="apps.support">${t.apps.support}</span> →</a>
+      </div>
     </div>
     <div class="fallback-artwork">${picture('cocinova','cocinova-icon','Cocinova Icon','','jpg')}</div>
   </section>`;
@@ -44,11 +53,15 @@ document.getElementById('app').innerHTML = `
     <div class="view" id="home">
       <section class="chapter introduction" id="hero" aria-labelledby="hero-title"><div class="hero-copy"><div id="hero-company-logo">${picture('company','company-logo','Company Logo','hero-company-logo')}</div><h1 id="hero-title" data-copy="hero.title">${t.hero.title}</h1><p id="hero-subtitle" data-copy="hero.subtitle">${t.hero.subtitle}</p></div><a class="scroll-arrow" href="#mooddrake" aria-label="MoodDrake"><svg viewBox="0 0 24 36" aria-hidden="true"><path d="M12 2v29M4 24l8 8 8-8" fill="none" stroke="currentColor"/></svg></a></section>
       ${applications}
-      ${comingSoonApplication}
+      ${cocinovaApplication}
       <section class="chapter contact" id="contact"><h2 data-copy="contact.title">${t.contact.title}</h2><p data-copy="contact.subtitle">${t.contact.subtitle}</p><div class="contact-email">${copy.contactLinks[0]}</div><div class="social-links">${copy.contactLinks.slice(1).join('')}</div></section>
       <footer><p data-copy="footer.copyright">${t.footer.copyright}</p></footer>
     </div>
-    ${copy.documents.map(doc=>`<article class="view document" id="${doc.id}" hidden><a class="document-back" href="#home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7" fill="none" stroke="currentColor"/></svg><span data-copy="common.backToHome">${t.common.backToHome}</span></a><header>${picture(doc.id.endsWith('tasknest')?'tasknest':'mooddrake',doc.id+'-icon',doc.id.endsWith('tasknest')?'TaskNest Icon':'MoodDrake Icon')}<h1${doc.titleKey?` data-copy="${doc.titleKey}"`:''}>${doc.title}</h1></header><div class="document-content">${doc.body.replaceAll('data-i18n','data-copy')}</div></article>`).join('')}
+    ${copy.documents.map(doc=>{
+      const slug = doc.id.split('-').at(-1);
+      const artwork = documentArtwork[slug];
+      return `<article class="view document" id="${doc.id}" hidden><a class="document-back" href="#home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 5-7 7 7 7" fill="none" stroke="currentColor"/></svg><span data-copy="common.backToHome">${t.common.backToHome}</span></a><header>${picture(slug,doc.id+'-icon',artwork.name+' Icon','',artwork.extension)}<h1${doc.titleKey?` data-copy="${doc.titleKey}"`:''}>${doc.title}</h1></header><div class="document-content">${doc.body.replaceAll('data-i18n','data-copy')}</div></article>`;
+    }).join('')}
   </main>`;
 
 const state = { language: 'en', route: 'home', paused: false };
