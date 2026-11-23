@@ -44,7 +44,7 @@ export default {
           "desc": "MoodDrake is more than a mood booster, it's a mystical companion for emotional healing and spiritual clarity. Discover powerful affirmations, guided meditations, mood-lifting exercises, and a collection of tiny rituals designed to support your inner balance."
         },
         "tasknest": {
-          "desc": "TaskNest is a beautifully simple to-do list app built to help you organize your life in the cleanest, fastest, and most effortless way possible. No menus to learn, no complicated features, no distractions—just one clear screen where everything fits and everything flows."
+          "desc": "LetItBe! is a beautifully simple to-do list app built to help you organize your life in the cleanest, fastest, and most effortless way possible. No menus to learn, no complicated features, no distractions—just one clear screen where everything fits and everything flows."
         }
       },
       "contact": {
@@ -150,12 +150,12 @@ export default {
           ]
         },
         "tasknest": {
-          "title": "TaskNest Privacy Policy",
+          "title": "LetItBe! Privacy Policy",
           "sections": [
             {"label":"Last Updated:","text":"2025"},
-            "TaskNest is designed with privacy as a core principle. We do not collect, store, process, or share any personal data from users.",
+            "LetItBe! is designed with privacy as a core principle. We do not collect, store, process, or share any personal data from users.",
             "1. No Data Collection",
-            "TaskNest does not collect:",
+            "LetItBe! does not collect:",
             "Personal information",
             "Usage data",
             "Analytics or tracking data",
@@ -163,17 +163,17 @@ export default {
             "Device identifiers",
             "Advertising identifiers",
             "2. Local Device Storage Only",
-            "All tasks, notes, and reminders you create inside TaskNest are stored ONLY on your device. Your data:",
+            "All tasks, notes, and reminders you create inside LetItBe! are stored ONLY on your device. Your data:",
             "Is never uploaded to any server",
             "Is never transmitted outside your device",
             "Can be deleted at any time by uninstalling the app",
             "3. Third-Party Services",
-            "TaskNest does not integrate any third-party analytics, advertising, tracking, or data-processing services.",
+            "LetItBe! does not integrate any third-party analytics, advertising, tracking, or data-processing services.",
             "4. Children's Privacy",
-            "Since no personal data is collected, TaskNest is safe for users of all ages.",
+            "Since no personal data is collected, LetItBe! is safe for users of all ages.",
             "5. Changes to This Policy",
             "If this privacy policy is updated, the latest version will always be accessible within the app.",
-            "© 2025 TaskNest — Valkyrie Dynamics"
+            "© 2025 LetItBe! — Valkyrie Dynamics"
           ]
         }
       },
@@ -189,7 +189,7 @@ export default {
           "title": "MoodDrake Support"
         },
         "tasknest": {
-          "title": "TaskNest Support",
+          "title": "LetItBe! Support",
           "intro": "We're here to help you with anything you need."
         }
       },
@@ -243,7 +243,7 @@ export default {
           "desc": "MoodDrake es más que un potenciador del estado de ánimo, es un compañero místico para la curación emocional y la claridad espiritual. Descubre afirmaciones poderosas, meditaciones guiadas, ejercicios para mejorar el ánimo y una colección de pequeños rituales diseñados para apoyar tu equilibrio interior."
         },
         "tasknest": {
-          "desc": "TaskNest es una aplicación de lista de tareas hermosamente simple construida para ayudarte a organizar tu vida de la manera más limpia, rápida y sin esfuerzo posible. Sin menús que aprender, sin funciones complicadas, sin distracciones—solo una pantalla clara donde todo encaja y todo fluye."
+          "desc": "LetItBe! es una aplicación de lista de tareas hermosamente simple construida para ayudarte a organizar tu vida de la manera más limpia, rápida y sin esfuerzo posible. Sin menús que aprender, sin funciones complicadas, sin distracciones—solo una pantalla clara donde todo encaja y todo fluye."
         }
       },
       "contact": {
@@ -349,12 +349,12 @@ export default {
           ]
         },
         "tasknest": {
-          "title": "Política de Privacidad de TaskNest",
+          "title": "Política de Privacidad de LetItBe!",
           "sections": [
             {"label":"Última actualización:","text":"2025"},
-            "La privacidad es un principio fundamental en el diseño de TaskNest. No recopilamos, almacenamos, tratamos ni compartimos datos personales de los usuarios.",
+            "La privacidad es un principio fundamental en el diseño de LetItBe!. No recopilamos, almacenamos, tratamos ni compartimos datos personales de los usuarios.",
             "1. Recopilación de datos",
-            "TaskNest no recopila:",
+            "LetItBe! no recopila:",
             "Información personal",
             "Datos de uso",
             "Datos de análisis o seguimiento",
@@ -362,17 +362,17 @@ export default {
             "Identificadores de dispositivos",
             "Identificadores publicitarios",
             "2. Almacenamiento exclusivo en el dispositivo",
-            "Todas las tareas, notas y recordatorios que creas en TaskNest se guardan únicamente en tu dispositivo. Tus datos:",
+            "Todas las tareas, notas y recordatorios que creas en LetItBe! se guardan únicamente en tu dispositivo. Tus datos:",
             "Nunca se suben a ningún servidor",
             "Nunca se transmiten fuera de tu dispositivo",
             "Pueden eliminarse en cualquier momento desinstalando la aplicación",
             "3. Servicios de terceros",
-            "TaskNest no integra servicios de terceros de análisis, publicidad, seguimiento ni tratamiento de datos.",
+            "LetItBe! no integra servicios de terceros de análisis, publicidad, seguimiento ni tratamiento de datos.",
             "4. Privacidad de los menores",
-            "Dado que no se recopilan datos personales, TaskNest es seguro para usuarios de todas las edades.",
+            "Dado que no se recopilan datos personales, LetItBe! es seguro para usuarios de todas las edades.",
             "5. Cambios en esta política",
             "Si se actualiza esta política de privacidad, la versión más reciente estará siempre disponible en la aplicación.",
-            "© 2025 TaskNest — Valkyrie Dynamics"
+            "© 2025 LetItBe! — Valkyrie Dynamics"
           ]
         }
       },
@@ -388,7 +388,7 @@ export default {
           "title": "Soporte de MoodDrake"
         },
         "tasknest": {
-          "title": "Soporte de TaskNest",
+          "title": "Soporte de LetItBe!",
           "intro": "Estamos aquí para ayudarte con todo lo que necesites."
         }
       },
@@ -442,7 +442,7 @@ export default {
           "desc": "MoodDrake هو أكثر من مجرد معزز للمزاج، إنه رفيق صوفي للشفاء العاطفي والوضوح الروحي. اكتشف التأكيدات القوية والتأملات الموجهة والتمارين المعززة للمزاج ومجموعة من الطقوس الصغيرة المصممة لدعم توازنك الداخلي."
         },
         "tasknest": {
-          "desc": "TaskNest هو تطبيق قائمة مهام بسيط بشكل جميل تم بناؤه لمساعدتك في تنظيم حياتك بأنظف وأسرع وأسهل طريقة ممكنة. لا توجد قوائم لتعلمها، ولا ميزات معقدة، ولا مشتتات—مجرد شاشة واضحة واحدة حيث يتناسب كل شيء ويتدفق كل شيء."
+          "desc": "LetItBe! هو تطبيق قائمة مهام بسيط بشكل جميل تم بناؤه لمساعدتك في تنظيم حياتك بأنظف وأسرع وأسهل طريقة ممكنة. لا توجد قوائم لتعلمها، ولا ميزات معقدة، ولا مشتتات—مجرد شاشة واضحة واحدة حيث يتناسب كل شيء ويتدفق كل شيء."
         }
       },
       "contact": {
@@ -548,12 +548,12 @@ export default {
           ]
         },
         "tasknest": {
-          "title": "سياسة خصوصية TaskNest",
+          "title": "سياسة خصوصية LetItBe!",
           "sections": [
             {"label":"آخر تحديث:","text":"2025"},
-            "صُمّم TaskNest على أساس أن الخصوصية مبدأ أساسي. لا نجمع أي بيانات شخصية للمستخدمين أو نخزنها أو نعالجها أو نشاركها.",
+            "صُمّم LetItBe! على أساس أن الخصوصية مبدأ أساسي. لا نجمع أي بيانات شخصية للمستخدمين أو نخزنها أو نعالجها أو نشاركها.",
             "1. جمع البيانات",
-            "لا يجمع TaskNest ما يلي:",
+            "لا يجمع LetItBe! ما يلي:",
             "المعلومات الشخصية",
             "بيانات الاستخدام",
             "بيانات التحليلات أو التتبع",
@@ -561,17 +561,17 @@ export default {
             "معرّفات الأجهزة",
             "معرّفات الإعلانات",
             "2. التخزين على الجهاز فقط",
-            "تُخزّن جميع المهام والملاحظات والتذكيرات التي تنشئها في TaskNest على جهازك فقط. بياناتك:",
+            "تُخزّن جميع المهام والملاحظات والتذكيرات التي تنشئها في LetItBe! على جهازك فقط. بياناتك:",
             "لا تُرفع إلى أي خادم",
             "لا تُنقل خارج جهازك",
             "يمكن حذفها في أي وقت بإلغاء تثبيت التطبيق",
             "3. خدمات الأطراف الثالثة",
-            "لا يدمج TaskNest أي خدمات خارجية للتحليلات أو الإعلان أو التتبع أو معالجة البيانات.",
+            "لا يدمج LetItBe! أي خدمات خارجية للتحليلات أو الإعلان أو التتبع أو معالجة البيانات.",
             "4. خصوصية الأطفال",
-            "بما أنه لا تُجمع بيانات شخصية، فإن TaskNest آمن للمستخدمين من جميع الأعمار.",
+            "بما أنه لا تُجمع بيانات شخصية، فإن LetItBe! آمن للمستخدمين من جميع الأعمار.",
             "5. التغييرات في هذه السياسة",
             "إذا حُدّثت سياسة الخصوصية هذه، فستكون أحدث نسخة متاحة دائماً داخل التطبيق.",
-            "© 2025 TaskNest — Valkyrie Dynamics"
+            "© 2025 LetItBe! — Valkyrie Dynamics"
           ]
         }
       },
@@ -587,7 +587,7 @@ export default {
           "title": "دعم MoodDrake"
         },
         "tasknest": {
-          "title": "دعم TaskNest",
+          "title": "دعم LetItBe!",
           "intro": "نحن هنا لمساعدتك في أي شيء تحتاجه."
         }
       },
@@ -641,7 +641,7 @@ export default {
           "desc": "MoodDrake - это больше, чем просто улучшение настроения, это мистический компаньон для эмоционального исцеления и духовной ясности. Откройте для себя мощные аффирмации, управляемые медитации, упражнения для поднятия настроения и коллекцию крошечных ритуалов, предназначенных для поддержки вашего внутреннего баланса."
         },
         "tasknest": {
-          "desc": "TaskNest - это красиво простое приложение для списка дел, созданное, чтобы помочь вам организовать свою жизнь самым чистым, быстрым и легким способом. Нет меню для изучения, нет сложных функций, нет отвлекающих факторов - только один четкий экран, где все подходит и все течет."
+          "desc": "LetItBe! - это красиво простое приложение для списка дел, созданное, чтобы помочь вам организовать свою жизнь самым чистым, быстрым и легким способом. Нет меню для изучения, нет сложных функций, нет отвлекающих факторов - только один четкий экран, где все подходит и все течет."
         }
       },
       "contact": {
@@ -747,12 +747,12 @@ export default {
           ]
         },
         "tasknest": {
-          "title": "Политика Конфиденциальности TaskNest",
+          "title": "Политика Конфиденциальности LetItBe!",
           "sections": [
             {"label":"Последнее обновление:","text":"2025 г."},
-            "При разработке TaskNest конфиденциальность была одним из основных принципов. Мы не собираем, не храним, не обрабатываем и не передаём персональные данные пользователей.",
+            "При разработке LetItBe! конфиденциальность была одним из основных принципов. Мы не собираем, не храним, не обрабатываем и не передаём персональные данные пользователей.",
             "1. Сбор данных",
-            "TaskNest не собирает:",
+            "LetItBe! не собирает:",
             "Персональные сведения",
             "Данные об использовании",
             "Данные аналитики или отслеживания",
@@ -760,17 +760,17 @@ export default {
             "Идентификаторы устройств",
             "Рекламные идентификаторы",
             "2. Хранение только на устройстве",
-            "Все задачи, заметки и напоминания, которые вы создаёте в TaskNest, хранятся только на вашем устройстве. Ваши данные:",
+            "Все задачи, заметки и напоминания, которые вы создаёте в LetItBe!, хранятся только на вашем устройстве. Ваши данные:",
             "Никогда не загружаются на серверы",
             "Никогда не передаются за пределы вашего устройства",
             "Могут быть удалены в любое время при удалении приложения",
             "3. Сторонние сервисы",
-            "TaskNest не подключает сторонние сервисы аналитики, рекламы, отслеживания или обработки данных.",
+            "LetItBe! не подключает сторонние сервисы аналитики, рекламы, отслеживания или обработки данных.",
             "4. Конфиденциальность детей",
-            "Поскольку персональные данные не собираются, TaskNest безопасен для пользователей любого возраста.",
+            "Поскольку персональные данные не собираются, LetItBe! безопасен для пользователей любого возраста.",
             "5. Изменения настоящей политики",
             "Если эта политика конфиденциальности будет обновлена, её актуальная версия всегда будет доступна в приложении.",
-            "© 2025 TaskNest — Valkyrie Dynamics"
+            "© 2025 LetItBe! — Valkyrie Dynamics"
           ]
         }
       },
@@ -786,7 +786,7 @@ export default {
           "title": "Поддержка MoodDrake"
         },
         "tasknest": {
-          "title": "Поддержка TaskNest",
+          "title": "Поддержка LetItBe!",
           "intro": "Мы здесь, чтобы помочь вам со всем, что вам нужно."
         }
       },
@@ -840,7 +840,7 @@ export default {
           "desc": "MoodDrake bir ruh hali yükseltici olmaktan çok daha fazlası, duygusal iyileşme ve ruhsal berraklık için mistik bir yoldaştır. Güçlü afirmasyonları, yönlendirilmiş meditasyonları, ruh hali yükselten egzersizleri ve iç dengenizi desteklemek için tasarlanmış küçük ritüeller koleksiyonunu keşfedin."
         },
         "tasknest": {
-          "desc": "TaskNest, hayatınızı en temiz, en hızlı ve en kolay şekilde organize etmenize yardımcı olmak için oluşturulmuş güzel bir şekilde basit bir yapılacaklar listesi uygulamasıdır. Öğrenilecek menü yok, karmaşık özellikler yok, dikkat dağıtıcı şeyler yok—her şeyin uyduğu ve her şeyin aktığı sadece bir net ekran."
+          "desc": "LetItBe!, hayatınızı en temiz, en hızlı ve en kolay şekilde organize etmenize yardımcı olmak için oluşturulmuş güzel bir şekilde basit bir yapılacaklar listesi uygulamasıdır. Öğrenilecek menü yok, karmaşık özellikler yok, dikkat dağıtıcı şeyler yok—her şeyin uyduğu ve her şeyin aktığı sadece bir net ekran."
         }
       },
       "contact": {
@@ -950,12 +950,12 @@ export default {
           ]
         },
         "tasknest": {
-          "title": "TaskNest Gizlilik Politikası",
+          "title": "LetItBe! Gizlilik Politikası",
           "sections": [
             {"label":"Son güncelleme:","text":"2025"},
-            "TaskNest, gizlilik temel ilke alınarak tasarlanmıştır. Kullanıcılardan hiçbir kişisel veri toplamıyor, saklamıyor, işlemiyor veya paylaşmıyoruz.",
+            "LetItBe!, gizlilik temel ilke alınarak tasarlanmıştır. Kullanıcılardan hiçbir kişisel veri toplamıyor, saklamıyor, işlemiyor veya paylaşmıyoruz.",
             "1. Veri Toplama",
-            "TaskNest şu verileri toplamaz:",
+            "LetItBe! şu verileri toplamaz:",
             "Kişisel bilgiler",
             "Kullanım verileri",
             "Analiz veya takip verileri",
@@ -963,17 +963,17 @@ export default {
             "Cihaz tanımlayıcıları",
             "Reklam tanımlayıcıları",
             "2. Yalnızca Cihazda Saklama",
-            "TaskNest’te oluşturduğunuz tüm görevler, notlar ve hatırlatıcılar yalnızca cihazınızda saklanır. Verileriniz:",
+            "LetItBe!’te oluşturduğunuz tüm görevler, notlar ve hatırlatıcılar yalnızca cihazınızda saklanır. Verileriniz:",
             "Hiçbir sunucuya yüklenmez",
             "Cihazınızın dışına aktarılmaz",
             "Uygulamayı kaldırarak her zaman silinebilir",
             "3. Üçüncü Taraf Hizmetleri",
-            "TaskNest; üçüncü taraf analiz, reklam, takip veya veri işleme hizmetlerini kullanmaz.",
+            "LetItBe!; üçüncü taraf analiz, reklam, takip veya veri işleme hizmetlerini kullanmaz.",
             "4. Çocukların Gizliliği",
-            "Kişisel veri toplanmadığı için TaskNest her yaştan kullanıcı için güvenlidir.",
+            "Kişisel veri toplanmadığı için LetItBe! her yaştan kullanıcı için güvenlidir.",
             "5. Bu Politikada Yapılan Değişiklikler",
             "Bu gizlilik politikası güncellenirse en güncel sürüme her zaman uygulamadan erişilebilir.",
-            "© 2025 TaskNest — Valkyrie Dynamics"
+            "© 2025 LetItBe! — Valkyrie Dynamics"
           ]
         }
       },
@@ -989,7 +989,7 @@ export default {
           "title": "MoodDrake Destek"
         },
         "tasknest": {
-          "title": "TaskNest Destek",
+          "title": "LetItBe! Destek",
           "intro": "İhtiyacınız olan her konuda size yardımcı olmak için buradayız."
         }
       },
@@ -1031,7 +1031,7 @@ export default {
       "description": "MoodDrake is more than a mood booster, it's a mystical companion for emotional healing and spiritual clarity. Discover powerful affirmations, guided meditations, mood-lifting exercises, and a collection of tiny rituals designed to support your inner balance."
     },
     "tasknest": {
-      "name": "TaskNest",
+      "name": "LetItBe!",
       "stores": [
         {
           "url": "https://apps.apple.com/tr/app/tasknest-simple-to-do-app/id6756080465?l=tr",
@@ -1052,7 +1052,7 @@ export default {
           "html": " <span data-i18n=\"apps.support\">Support</span> → "
         }
       ],
-      "description": "TaskNest is a beautifully simple to-do list app built to help you organize your life in the cleanest, fastest, and most effortless way possible. No menus to learn, no complicated features, no distractions—just one clear screen where everything fits and everything flows."
+      "description": "LetItBe! is a beautifully simple to-do list app built to help you organize your life in the cleanest, fastest, and most effortless way possible. No menus to learn, no complicated features, no distractions—just one clear screen where everything fits and everything flows."
     }
   },
   "documents": [
@@ -1088,15 +1088,15 @@ export default {
     },
     {
       "id": "support-tasknest",
-      "title": "TaskNest Support",
+      "title": "LetItBe! Support",
       "titleKey": "support.tasknest.title",
       "body": "<p data-i18n=\"support.tasknest.intro\">We're here to help you with anything you need.</p><a href=\"mailto:valkyriadynamica@gmail.com\">\r\n         <svg fill=\"none\" stroke=\"currentColor\" viewBox=\"0 0 24 24\"><path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z\" />\r\n         </svg><span>valkyriadynamica@gmail.com</span> </a>"
     },
     {
       "id": "privacy-tasknest",
-      "title": "TaskNest Privacy Policy",
+      "title": "LetItBe! Privacy Policy",
       "titleKey": "privacy.tasknest.title",
-      "body": "<p><strong data-i18n=\"privacy.tasknest.sections.0.label\">Last Updated:</strong> <span data-i18n=\"privacy.tasknest.sections.0.text\">2025</span></p>\r\n        <p data-i18n=\"privacy.tasknest.sections.1\">TaskNest is designed with privacy as a core principle. We do not collect, store, process, or share any personal data from users.</p>\r\n        <h2 data-i18n=\"privacy.tasknest.sections.2\">1. No Data Collection</h2>\r\n        <p data-i18n=\"privacy.tasknest.sections.3\">TaskNest does not collect:</p>\r\n        <ul>\r\n         <li data-i18n=\"privacy.tasknest.sections.4\">Personal information</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.5\">Usage data</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.6\">Analytics or tracking data</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.7\">Location data</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.8\">Device identifiers</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.9\">Advertising identifiers</li>\r\n        </ul>\r\n        <h2 data-i18n=\"privacy.tasknest.sections.10\">2. Local Device Storage Only</h2>\r\n        <p data-i18n=\"privacy.tasknest.sections.11\">All tasks, notes, and reminders you create inside TaskNest are stored ONLY on your device. Your data:</p>\r\n        <ul>\r\n         <li data-i18n=\"privacy.tasknest.sections.12\">Is never uploaded to any server</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.13\">Is never transmitted outside your device</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.14\">Can be deleted at any time by uninstalling the app</li>\r\n        </ul>\r\n        <h2 data-i18n=\"privacy.tasknest.sections.15\">3. Third-Party Services</h2>\r\n        <p data-i18n=\"privacy.tasknest.sections.16\">TaskNest does not integrate any third-party analytics, advertising, tracking, or data-processing services.</p>\r\n        <h2 data-i18n=\"privacy.tasknest.sections.17\">4. Children's Privacy</h2>\r\n        <p data-i18n=\"privacy.tasknest.sections.18\">Since no personal data is collected, TaskNest is safe for users of all ages.</p>\r\n        <h2 data-i18n=\"privacy.tasknest.sections.19\">5. Changes to This Policy</h2>\r\n        <p data-i18n=\"privacy.tasknest.sections.20\">If this privacy policy is updated, the latest version will always be accessible within the app.</p>\r\n        <p data-i18n=\"privacy.tasknest.sections.21\">© 2025 TaskNest — Valkyrie Dynamics</p>"
+      "body": "<p><strong data-i18n=\"privacy.tasknest.sections.0.label\">Last Updated:</strong> <span data-i18n=\"privacy.tasknest.sections.0.text\">2025</span></p>\r\n        <p data-i18n=\"privacy.tasknest.sections.1\">LetItBe! is designed with privacy as a core principle. We do not collect, store, process, or share any personal data from users.</p>\r\n        <h2 data-i18n=\"privacy.tasknest.sections.2\">1. No Data Collection</h2>\r\n        <p data-i18n=\"privacy.tasknest.sections.3\">LetItBe! does not collect:</p>\r\n        <ul>\r\n         <li data-i18n=\"privacy.tasknest.sections.4\">Personal information</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.5\">Usage data</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.6\">Analytics or tracking data</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.7\">Location data</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.8\">Device identifiers</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.9\">Advertising identifiers</li>\r\n        </ul>\r\n        <h2 data-i18n=\"privacy.tasknest.sections.10\">2. Local Device Storage Only</h2>\r\n        <p data-i18n=\"privacy.tasknest.sections.11\">All tasks, notes, and reminders you create inside LetItBe! are stored ONLY on your device. Your data:</p>\r\n        <ul>\r\n         <li data-i18n=\"privacy.tasknest.sections.12\">Is never uploaded to any server</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.13\">Is never transmitted outside your device</li>\r\n         <li data-i18n=\"privacy.tasknest.sections.14\">Can be deleted at any time by uninstalling the app</li>\r\n        </ul>\r\n        <h2 data-i18n=\"privacy.tasknest.sections.15\">3. Third-Party Services</h2>\r\n        <p data-i18n=\"privacy.tasknest.sections.16\">LetItBe! does not integrate any third-party analytics, advertising, tracking, or data-processing services.</p>\r\n        <h2 data-i18n=\"privacy.tasknest.sections.17\">4. Children's Privacy</h2>\r\n        <p data-i18n=\"privacy.tasknest.sections.18\">Since no personal data is collected, LetItBe! is safe for users of all ages.</p>\r\n        <h2 data-i18n=\"privacy.tasknest.sections.19\">5. Changes to This Policy</h2>\r\n        <p data-i18n=\"privacy.tasknest.sections.20\">If this privacy policy is updated, the latest version will always be accessible within the app.</p>\r\n        <p data-i18n=\"privacy.tasknest.sections.21\">© 2025 LetItBe! — Valkyrie Dynamics</p>"
     }
   ],
   "contactLinks": [

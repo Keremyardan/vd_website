@@ -14,7 +14,7 @@ const flagPath = language => `/assets/flags/${language.country}.svg`;
 const picture = (name, id, alt, className='', extension='png') => `<img class="${className}" id="${id}" src="/assets/${name}.${extension}" alt="${alt}" width="1024" height="1024">`;
 const documentArtwork = {
   mooddrake: { name: 'MoodDrake', extension: 'png' },
-  tasknest: { name: 'TaskNest', extension: 'png' },
+  tasknest: { name: 'LetItBe!', extension: 'png' },
   cocinova: { name: 'Cocinova', extension: 'jpg' }
 };
 const applications = Object.entries(copy.apps).map(([slug, app]) => `
@@ -43,7 +43,7 @@ const cocinovaApplication = `
 
 document.getElementById('app').innerHTML = `
   <header class="navigation-shell">
-    <nav class="navigation-links" aria-label="Navigation"><a href="#hero" data-copy="nav.home">${t.nav.home}</a><a href="#mooddrake">MoodDrake</a><a href="#tasknest">TaskNest</a><a href="#cocinova">Cocinova</a><a href="#contact" data-copy="nav.contact">${t.nav.contact}</a></nav>
+    <nav class="navigation-links" aria-label="Navigation"><a href="#hero" data-copy="nav.home">${t.nav.home}</a><a href="#mooddrake">MoodDrake</a><a href="#tasknest">LetItBe!</a><a href="#cocinova">Cocinova</a><a href="#contact" data-copy="nav.contact">${t.nav.contact}</a></nav>
     <div class="navigation-tools">
       <button class="motion-control" type="button" aria-label="Pause animation" aria-pressed="false"><svg class="pause-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10M13 5v10" stroke="currentColor" stroke-width="2"/></svg><svg class="play-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="m5.5 4 9 6-9 6Z" fill="currentColor"/></svg></button>
       <div class="language-control"><button class="language-button" type="button" aria-label="Language" aria-expanded="false" aria-controls="lang-dropdown"><img class="language-flag" id="current-lang-flag" src="${flagPath(languages[0])}" alt="" width="24" height="18"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor"/></svg></button><div class="language-options" id="lang-dropdown" hidden>${languages.map(language=>`<button type="button" data-locale="${language.code}"><img class="language-flag" src="${flagPath(language)}" alt="" width="24" height="18"><span lang="${language.code}">${language.name}</span></button>`).join('')}</div></div>
